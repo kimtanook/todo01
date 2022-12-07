@@ -21,7 +21,6 @@ const List = ({ toDos, setToDos }) => {
   };
   return (
     <div className="todo-list-container">
-      <hr />
       <div>To Do List</div>
       <div className="todo-list">
         <div className="todo-container">

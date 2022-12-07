@@ -22,25 +22,28 @@ const Form = ({ setToDos }) => {
   };
 
   return (
-    <form onSubmit={onSubmit} className="todo-form">
-      <input
-        onChange={onChangeTitle}
-        value={title}
-        type="text"
-        placeholder="title"
-        minLength={2}
-        maxlength={20}
-      />
-      <input
-        onChange={onChangeBody}
-        value={body}
-        type="text"
-        placeholder="body"
-        minLength={2}
-        maxlength={20}
-      />
-      <button>Add To Do</button>
-    </form>
+    <>
+      <form onSubmit={onSubmit} className="todo-form">
+        <input
+          onChange={onChangeTitle}
+          value={title}
+          type="text"
+          placeholder="title"
+          minLength={2}
+          maxlength={20}
+        />
+        <input
+          onChange={onChangeBody}
+          value={body}
+          type="text"
+          placeholder="body"
+          minLength={2}
+          maxlength={20}
+        />
+        <button>Add To Do</button>
+      </form>
+      <hr className="hr"></hr>
+    </>
   );
 };
 

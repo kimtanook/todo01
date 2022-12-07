@@ -4,7 +4,7 @@ import '../../css/style.css';
 function Header() {
   return (
     <div>
-      <h1 className="title-name">My To Dos </h1>
+      <h1 className="title-name">My ToDos </h1>
     </div>
   );
 }
