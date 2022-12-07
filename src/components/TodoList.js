@@ -12,7 +12,7 @@ function TodoList() {
   return (
     <Layout>
       <Header />
-      <Form toDos={toDos} setToDos={setToDos} />
+      <Form setToDos={setToDos} />
       <List toDos={toDos} setToDos={setToDos} />
     </Layout>
   );

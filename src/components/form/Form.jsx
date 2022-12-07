@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../../css/style.css';
 
-const Form = ({ toDos, setToDos }) => {
+const Form = ({ setToDos }) => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
 
@@ -29,6 +29,7 @@ const Form = ({ toDos, setToDos }) => {
         type="text"
         placeholder="title"
         minLength={2}
+        maxlength={20}
       />
       <input
         onChange={onChangeBody}
@@ -36,6 +37,7 @@ const Form = ({ toDos, setToDos }) => {
         type="text"
         placeholder="body"
         minLength={2}
+        maxlength={20}
       />
       <button>Add To Do</button>
     </form>

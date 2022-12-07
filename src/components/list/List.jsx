@@ -29,8 +29,10 @@ const List = ({ toDos, setToDos }) => {
             if (item.isDone == false) {
               return (
                 <div className="todo-item" id={item.id} key={item.id}>
-                  제목<div className="item-title">{item.title}</div>
-                  내용<div className="item-body">{item.body}</div>
+                  제목
+                  <div className="item-title">{item.title}</div>
+                  내용
+                  <div className="item-body">{item.body}</div>
                   <button onClick={confirmToDo}>
                     {!item.isDone ? '확인' : '취소'}
                   </button>
